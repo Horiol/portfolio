@@ -3,7 +3,8 @@ import App from './App.vue';
 import router from './router';
 import store from './store';
 import './registerServiceWorker';
-import VueAnalytics from 'vue-analytics';
+
+import VueAnalytics = require('vue-analytics');
 
 Vue.config.productionTip = false;
 
