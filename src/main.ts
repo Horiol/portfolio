@@ -4,7 +4,7 @@ import router from './router';
 import store from './store';
 import './registerServiceWorker';
 
-import VueAnalytics = require('vue-analytics');
+const VueAnalytics = require('vue-analytics');
 
 Vue.config.productionTip = false;
 
