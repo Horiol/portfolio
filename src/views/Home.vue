@@ -3,6 +3,7 @@
     <!-- <img alt="Vue logo" src="../assets/logo.png"> -->
     <h1 class="top-padding">{{title}}</h1>
     <h3><span v-html="description"></span></h3>
+    <font-awesome-icon icon="coffee" />
   </div>
 </template>
 
@@ -23,7 +24,9 @@
     public description: string = `
       I'm a web developer & programmer living in Barcelona, Spain.
       <br>
-      I make web applications, usually with <a href="https://vuejs.org/">Vue</a> and <a href="https://www.python.org/">Python</a>.
-    `
+      I make web applications, usually with
+      <a href="https://vuejs.org/">Vue</a> and
+      <a href="https://www.python.org/">Python</a>.
+    `;
   }
 </script>
