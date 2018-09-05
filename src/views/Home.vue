@@ -1,10 +1,18 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <h1>{{title}}</h1>
+    <!-- <img alt="Vue logo" src="../assets/logo.png"> -->
+    <h1 class="top-padding">{{title}}</h1>
     <h3><span v-html="description"></span></h3>
   </div>
 </template>
+
+<style media="screen">
+  @media (min-width: 768px) {
+    .top-padding{
+      padding-top: 5rem;
+    }
+  }
+</style>
 
 <script lang="ts">
   import { Component, Vue } from 'vue-property-decorator';
