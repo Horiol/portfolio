@@ -3,30 +3,31 @@
     <!-- <img alt="Vue logo" src="../assets/logo.png"> -->
     <h1 class="top-padding">{{title}}</h1>
     <h3><span v-html="description"></span></h3>
-    <font-awesome-icon icon="coffee" />
   </div>
 </template>
 
 <style media="screen">
-  @media (min-width: 768px) {
-    .top-padding{
-      padding-top: 5rem;
-    }
+@media (min-width: 768px) {
+  .top-padding {
+    padding-top: 5rem;
   }
+}
 </style>
 
-<script lang="ts">
-  import { Component, Vue } from 'vue-property-decorator';
-
-  @Component
-  export default class Home extends Vue {
-    public title: string = 'Full Stack Developer';
-    public description: string = `
-      I'm a web developer & programmer living in Barcelona, Spain.
-      <br>
-      I make web applications, usually with
-      <a href="https://vuejs.org/">Vue</a> and
-      <a href="https://www.python.org/">Python</a>.
-    `;
+<script>
+export default {
+  name: "Home",
+  data: function() {
+    return {
+      title: "Full Stack Developer",
+      description: `
+          I'm a web developer & programmer living in Barcelona, Spain.
+          <br>
+          I make web applications, usually with
+          <a href="https://vuejs.org/">Vue</a> and
+          <a href="https://www.python.org/">Python</a>.
+        `
+    };
   }
+};
 </script>
