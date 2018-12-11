@@ -4,6 +4,7 @@
     <b-jumbotron :header="title">
       <h3><span v-html="description"></span></h3>
     </b-jumbotron>
+    <Projects></Projects>
   </div>
 </template>
 
@@ -16,8 +17,13 @@
 </style>
 
 <script>
+import Projects from "@/components/Projects.vue";
+
 export default {
   name: "Home",
+  components: {
+    Projects
+  },
   data: function() {
     return {
       title: "Full Stack Developer",
