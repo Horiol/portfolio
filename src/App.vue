@@ -14,7 +14,7 @@
               <b-dropdown-item href="#">FA</b-dropdown-item>
             </b-nav-item-dropdown> -->
             <b-nav-item><router-link :to="{name:'home'}">Home</router-link></b-nav-item>
-            <b-nav-item><router-link :to="{name:'about'}">About</router-link></b-nav-item>
+            <!-- <b-nav-item><router-link :to="{name:'about'}">About</router-link></b-nav-item> -->
             <b-nav-item><router-link :to="{name:'contact'}">Contact</router-link></b-nav-item>
           </b-navbar-nav>
         </b-collapse>
