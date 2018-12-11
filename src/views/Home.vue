@@ -1,8 +1,9 @@
 <template>
   <div class="home">
     <!-- <img alt="Vue logo" src="../assets/logo.png"> -->
-    <h1 class="top-padding">{{title}}</h1>
-    <h3><span v-html="description"></span></h3>
+    <b-jumbotron :header="title">
+      <h3><span v-html="description"></span></h3>
+    </b-jumbotron>
   </div>
 </template>
 

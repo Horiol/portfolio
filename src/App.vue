@@ -3,7 +3,7 @@
     <div id="nav">
       <b-navbar toggleable="md">
         <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
-        <b-navbar-brand href="/">Oriol Vall</b-navbar-brand>
+        <b-navbar-brand :to="{name:'home'}">Oriol Vall</b-navbar-brand>
         <b-collapse is-nav id="nav_collapse">
           <!-- Right aligned nav items -->
           <b-navbar-nav class="ml-auto">
@@ -26,7 +26,7 @@
 
 <style lang="scss">
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -43,3 +43,9 @@
   }
 }
 </style>
+
+<script>
+export default {
+  name: "App"
+};
+</script>
