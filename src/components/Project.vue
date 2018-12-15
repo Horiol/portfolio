@@ -15,11 +15,21 @@
     </div>
 </template>
 
+<style>
+.card-img-top {
+  width: 15rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+
+
 <script>
 import HTML from "@/assets/html.png";
 import JS from "@/assets/js.png";
 import Python from "@/assets/python.png";
 import Bash from "@/assets/bash.png";
+import Vue from "@/assets/vue.png";
 
 export default {
   name: "Project",
@@ -30,6 +40,8 @@ export default {
         return HTML;
       } else if (this.project.language === "Python") {
         return Python;
+      } else if (this.project.language === "Vue") {
+        return Vue;
       } else if (this.project.language === "JavaScript") {
         return JS;
       } else if (this.project.language === "Shell") {
