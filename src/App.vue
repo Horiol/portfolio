@@ -12,6 +12,7 @@
     const filter = text => {
         filter_by.value = text.toLowerCase();
     };
+    console.log(import.meta.env.MODE);
 </script>
 
 <template>
